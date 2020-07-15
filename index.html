@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Сайт lagoona, отели - модуль 5</title>
 </head>
 
 <body>
-	<header id="top" class="conteiner">
+	<header id="top" class="container">
 		<div class="header__up">
 			<div class="header__logo">
 				<a href="#"><img src="./img/logo_header.png" alt="Логотип компании"></a>
@@ -37,7 +39,7 @@
 			</div>
 		</div>
 	</header>
-	<main class="conteiner">
+	<main class="container">
 		<section class="now">
 			<form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="now__bookinging">
 				<h2 class="booking__header heading">Быстрая бронь</h2>
@@ -56,11 +58,13 @@
 					</li>
 					<li class="booking__list-item">
 						<label class="visually-hidden" for="number_of_nights">Количество ночей</label>
-						<input class="input" id="number_of_nights" type="text" name="number_of_nights" placeholder="Количество ночей">
+						<input class="input" id="number_of_nights" type="text" name="number_of_nights"
+							placeholder="Количество ночей">
 					</li>
 					<li class="booking__list-item">
 						<label class="visually-hidden" for="number_of_guests">Количество гостей</label>
-						<input class="input" id="number_of_guests" type="text" name="number_of_guests" placeholder="Количество гостей">
+						<input class="input" id="number_of_guests" type="text" name="number_of_guests"
+							placeholder="Количество гостей">
 					</li>
 				</ul>
 				<div class="booking__search">
@@ -97,176 +101,260 @@
 		</section>
 		<section id="services">
 			<h2 class="heading"><a class="list" href="#top">Услуги</a></h2>
-			<ul class="services">
-				<li class="service card">
-					<img class="service__img" src="./img/10_2311.jpg" alt="Бокалы вина">
-					<div class="service__body">
-						<h3 class="service__body_heading"><a class="link" href="">Эксклюзивное обслуживание</a></h3>
-						<p class="service__body_description">
-							Равным образом постоянный количественный рост и сфера нашей активности
-						</p>
+			<ul class="row">
+				<li class="service col-lg-6">
+					<div class="card">
+						<img class="service__img" src="./img/10_2311.jpg" alt="Бокалы вина">
+						<div class="service__body">
+							<h3 class="service__body_heading"><a class="link" href="">Эксклюзивное обслуживание</a></h3>
+							<p class="service__body_description">
+								Равным образом постоянный количественный рост и сфера нашей активности
+							</p>
+						</div>
 					</div>
 				</li>
-				<li class="service card">
-					<img class="service__img" src="./img/15_2319.jpg" alt="Сервированный стол">
-					<div class="service__body">
-						<h3 class="service__body_heading"><a class="link" href="">Аренда банкетных залов</a></h3>
-						<p class="service__body_description">
-							Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-						</p>
+				<li class="service col-lg-6">
+					<div class="card">
+						<img class="service__img" src="./img/15_2319.jpg" alt="Сервированный стол">
+						<div class="service__body">
+							<h3 class="service__body_heading"><a class="link" href="">Аренда банкетных залов</a></h3>
+							<p class="service__body_description">
+								Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+							</p>
+						</div>
 					</div>
 				</li>
-				<li class="service card">
-					<img class="service__img" src="./img/12_2312.jpg" alt="Бассейн">
-					<div class="service__body">
-						<h3 class="service__body_heading"><a class="link" href="">Сауны, бассейны, бани, фитнес-залы</a></h3>
-						<p class="service__body_description">
-							Не следует, однако забывать, что начало повседневной работы по формированию позиции
-						</p>
+			</ul>
+			<ul class="row">
+				<li class="service col-lg-6">
+					<div class="card">
+						<img class="service__img" src="./img/12_2312.jpg" alt="Бассейн">
+						<div class="service__body">
+							<h3 class="service__body_heading"><a class="link" href="">Сауны, бассейны, бани, фитнес-залы</a></h3>
+							<p class="service__body_description">
+								Не следует, однако забывать, что начало повседневной работы по формированию позиции
+							</p>
+						</div>
 					</div>
 				</li>
-				<li class="service card">
-					<img class="service__img" src="./img/carlo_d_agnolo_afxsh_l4fby_unsplash.jpg"
-						alt="Автомобили выстроенные в ряд ">
-					<div class="service__body">
-						<h3 class="service__body_heading"><a class="link" href="">Охраняемые автомобильные стоянки</a></h3>
-						<p class="service__body_description">
-							Не следует, однако забывать, что начало повседневной работы по формированию позиции
-						</p>
+				<li class="service col-lg-6">
+					<div class="card">
+						<img class="service__img" src="./img/carlo_d_agnolo_afxsh_l4fby_unsplash.jpg"
+							alt="Автомобили выстроенные в ряд ">
+						<div class="service__body">
+							<h3 class="service__body_heading"><a class="link" href="">Охраняемые автомобильные стоянки</a></h3>
+							<p class="service__body_description">
+								Не следует, однако забывать, что начало повседневной работы по формированию позиции
+							</p>
+						</div>
 					</div>
 				</li>
 			</ul>
 		</section>
 		<section id="privileges">
-			<h2 class="heading"><a class="list" href="#top">Преймущества</a></h2>
-			<ul class="privileges">
-				<li class="privilege card">
-					<img src="./img/icons_bathtub.png" alt="Ванная">
-					<p class="privilege__text">
-						Идейные соображения высшего порядка, а также постоянный количественный рост
-					</p>
+			<h2 class="privileges heading"><a class="list" href="#top">Преймущества</a></h2>
+			<ul class="row">
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_bathtub.png" alt="Ванная">
+						<p class="privilege__text">
+							Идейные соображения высшего порядка, а также постоянный количественный рост
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_hanger.png" alt="Вешалка с полотенцем">
-					<p class="privilege__text">
-						Значимость этих проблем настолько очевидна, что вопрос остается открытым
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_hanger.png" alt="Вешалка с полотенцем">
+						<p class="privilege__text">
+							Значимость этих проблем настолько очевидна, что вопрос остается открытым
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_heating.png" alt="Обогреватель">
-					<p class="privilege__text">
-						Таким образом реализация плановых заданий играет важную роль для понимания
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_heating.png" alt="Обогреватель">
+						<p class="privilege__text">
+							Таким образом реализация плановых заданий играет важную роль для понимания
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_hotel_key.png" alt="Ключ номера">
-					<p class="privilege__text">
-						Повседневная практика показывает, что сложившаяся структура организации
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_hotel_key.png" alt="Ключ номера">
+						<p class="privilege__text">
+							Повседневная практика показывает, что сложившаяся структура организации
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_parking.png" alt="Парковка">
-					<p class="privilege__text">
-						Равным образом рамки и место обучения кадров способствует подготовки сотрудника
-					</p>
+			</ul>
+			<ul class="row">
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_parking.png" alt="Парковка">
+						<p class="privilege__text">
+							Равным образом рамки и место обучения кадров способствует подготовки сотрудника
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_reception.png" alt="Рецепшен">
-					<p class="privilege__text">
-						Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_reception.png" alt="Рецепшен">
+						<p class="privilege__text">
+							Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_security_box.png" alt="Сейф">
-					<p class="privilege__text">
-						Повседневная практика показывает, что дальнейшее развитие различных форм
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_security_box.png" alt="Сейф">
+						<p class="privilege__text">
+							Повседневная практика показывает, что дальнейшее развитие различных форм
+						</p>
+					</div>
 				</li>
-				<li class="privilege card">
-					<img src="./img/icons_swimming_pool.png" alt="Бассейн">
-					<p class="privilege__text">
-						Значимость этого настолько очевидна, что консультация наших экспертов помогает
-					</p>
+				<li class="col-lg-3">
+					<div class="privilege card">
+						<img src="./img/icons_swimming_pool.png" alt="Бассейн">
+						<p class="privilege__text">
+							Значимость этого настолько очевидна, что консультация наших экспертов помогает
+						</p>
+					</div>
 				</li>
 			</ul>
 		</section>
 		<section id="hotels">
 			<h2 class="heading"><a class="list" href="#top">Размещение</a></h2>
-			<ul class="hotels">
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_01.jpg" alt="Виды отеля Lagoona española">
-					<div class="hotel__body">
-						<p class="hotel__body-text four-stars">от <span class="hotel__body-price">4 698 р</span>/ ночь</p>
-						<span>Lagoona española</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+			<ul class="hotels row">
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_01.jpg" alt="Виды отеля Lagoona española">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">4 698 р</span>/ ночь</p>
+								<div class="four-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona española</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_02.jpg" alt="Виды отеля Lagoona son típicas">
-					<div class="hotel__body">
-						<p class="hotel__body-text four-stars">от <span class="hotel__body-price">5 148 р</span>/ ночь</p>
-						<span>Lagoona son típicas</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_02.jpg" alt="Виды отеля Lagoona son típicas">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">5 148 р</span>/ ночь</p>
+								<div class="four-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona son típicas</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_03.jpg" alt="Виды отеля ">
-					<div class="hotel__body">
-						<p class="hotel__body-text five-stars">от <span class="hotel__body-price">6 254 р</span>/ ночь</p>
-						<span>Lagoona de la guerra</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_03.jpg" alt="Виды отеля ">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 254 р</span>/ ночь</p>
+								<div class="five-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona de la guerra</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_04.jpg" alt="Виды отеля Lagoona mentira piadosa">
-					<div class="hotel__body">
-						<p class="hotel__body-text five-stars">от <span class="hotel__body-price">6 320 р</span>/ ночь</p>
-						<span>Lagoona mentira piadosa</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+			</ul>
+			<ul class="hotels row">
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_04.jpg" alt="Виды отеля Lagoona mentira piadosa">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 320 р</span>/ ночь</p>
+								<div class="five-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona mentira piadosa</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_05.jpg" alt="Виды отеля Lagoona empujar la creatividad">
-					<div class="hotel__body">
-						<p class="hotel__body-text four-stars">от <span class="hotel__body-price">6 457 р</span>/ ночь</p>
-						<span>Lagoona empujar la creatividad</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_05.jpg" alt="Виды отеля Lagoona empujar la creatividad">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 457 р</span>/ ночь</p>
+								<div class="four-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona empujar la creatividad</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_06.jpg" alt="Виды отеля Lagoona el retorno">
-					<div class="hotel__body">
-						<p class="hotel__body-text four-stars">от <span class="hotel__body-price">6 490 р</span>/ ночь</p>
-						<span>Lagoona el retorno</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_06.jpg" alt="Виды отеля Lagoona el retorno">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 490 р</span>/ ночь</p>
+								<div class="four-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona el retorno</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_07.jpg" alt="Виды отеля Lagoona enfermo terminó">
-					<div class="hotel__body">
-						<p class="hotel__body-text five-stars">от <span class="hotel__body-price">6 505 р</span>/ ночь</p>
-						<span>Lagoona enfermo terminó</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+			</ul>
+			<ul class="hotels row">
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_07.jpg" alt="Виды отеля Lagoona enfermo terminó">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 505 р</span>/ ночь</p>
+								<div class="five-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona enfermo terminó</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card">
-					<img class="hotel__img" src="./img/hotels_08.jpg" alt="Виды отеля Lagoona suerte siguió siempre">
-					<div class="hotel__body">
-						<p class="hotel__body-text four-stars">от <span class="hotel__body-price">6 824 р</span>/ ночь</p>
-						<span>Lagoona suerte siguió siempre</span>
-						<p class="hotel__body-text">Барселона, Испания</p>
-						<a href="#" class="hotel__number btn__light">Номера</a>
+				<li class="col-lg-4">
+					<div class="hotel card">
+						<img class="hotel__img" src="./img/hotels_08.jpg" alt="Виды отеля Lagoona suerte siguió siempre">
+						<div class="hotel__body">
+							<div class="row">
+								<p class="hotel__body-text col-lg-7">от <span class="hotel__body-price">6 824 р</span>/ ночь</p>
+								<div class="four-stars col-lg-4">
+								</div>
+							</div>
+							<span>Lagoona suerte siguió siempre</span>
+							<p class="hotel__body-text">Барселона, Испания</p>
+							<a href="#" class="hotel__number btn__light">Номера</a>
+						</div>
 					</div>
 				</li>
-				<li class="hotel card next">
-					<h3 class="hotel__next"><a class="link" href="#">Посмотреть все варианты</a></h3>
+				<li class="col-lg-4">
+					<div class="hotel card next">
+						<a class="link next__heading" href="#">
+							Посмотреть все варианты
+						</a>
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -318,8 +406,7 @@
 						<input class="feedback__list-input" required id="tel" type="tel" name="phone" placeholder="+7">
 					</li>
 					<li class="feedback__list-item">
-						<textarea class="feedback__list-input" required rows="2" name="text"
-							placeholder="Сообщение..."></textarea>
+						<textarea class="feedback__list-input" required rows="2" name="text" placeholder="Сообщение..."></textarea>
 					</li>
 					<li class="feedback__search">
 						<button type="submit" class="feedback__btn btn">Отправить</button>
@@ -328,7 +415,7 @@
 			</form>
 		</section>
 	</main>
-	<footer class="footer conteiner">
+	<footer class="footer container">
 		<div class="footer__copyright">
 			<p class="footer__copyright-p">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
 			<p class="footer__copyright-p">Представленная на сайте информация носит справочный характер и не является
