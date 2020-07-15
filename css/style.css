@@ -144,14 +144,14 @@ header .link {
 }
 
 .header__up {
-	display: flex;
+	/* display: flex; */
 	padding: 30px 0 26px;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .header__logo {
-	display: flex;
-	align-items: center;
+	/* display: flex;
+	align-items: center; */
 	border-radius: 12px;
 	transition: box-shadow 0.3s ease-out;
 }
@@ -200,7 +200,7 @@ header .link {
 }
 
 .header__down {
-	display: flex;
+	/* display: flex; */
 	padding: 11px 20px 13px;
 	margin-bottom: 33px;
 	border-radius: 12px;
@@ -211,8 +211,8 @@ header .link {
 }
 
 .header__menu {
-	align-self: center;
-	flex: 0 0 650px;
+	/* align-self: center;
+	flex: 0 0 650px; */
 }
 
 .menu {
