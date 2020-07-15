@@ -128,6 +128,17 @@ body {
 	color: #333;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
 header .link {
 	color: #666;
 }
@@ -253,22 +264,7 @@ header .link {
 	padding-bottom: 29px;
 }
 
-.now {
-	display: flex;
-}
-.now__bookinging {
-	margin-right: auto;
-}
-
-.booking__list {
-	display: flex;
-	flex-direction: column;
-}
-
 .booking__list-item {
-	display: flex;
-	align-items: center;
-	width: 518px;
 	margin-bottom: 23px;
 }
 
@@ -278,17 +274,6 @@ header .link {
 	background: #fff;
 	line-height: 70px;
 	width: 100%;
-}
-
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0 !important;
-	border: 0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
 }
 
 .heading {
@@ -305,9 +290,9 @@ header .link {
 }
 
 .booking__search {
-	display: flex;
-	/* justify-content: start; */
-	align-items: center;
+	/* display: flex;
+	justify-content: start; 
+	align-items: center;*/
 }
 
 .booking__search-btn {
@@ -346,7 +331,7 @@ header .link {
 }
 
 .booking__search-result {
-	padding-left: 30px;
+	line-height: 4.8em;
 	color: #999;
 }
 
@@ -365,7 +350,9 @@ header .link {
 }
 
 .offer__img {
-	width: 595px;
+	width: 100%;
+	height: 84.5%;
+	object-fit: cover;
 	border-radius: 12px;
 }
 
@@ -544,6 +531,7 @@ header .link {
 	position: relative;
 	background: url(../img/hotels_09.jpg) 50% 50% / cover no-repeat;
 	border-radius: 12px;
+	min-height: 436px;
 }
 
 .next__heading {
@@ -571,9 +559,9 @@ header .link {
 }
 
 .contacts {
-	display: flex;
-	/* margin-right: 178px; */
-	align-items: center;
+	/* display: flex;
+	margin-right: 178px; 
+	align-items: center; */
 }
 
 .contacts .link[href*="mailto"]:hover,
@@ -631,8 +619,9 @@ header .link {
 
 .feedback {
 	padding-top: 38px;
-	width: 340px;
 	line-height: 72px;
+	width: 80%;
+	margin: auto;
 }
 
 .feedback__header {
@@ -654,15 +643,12 @@ header .link {
 }
 
 .footer {
-	display: flex;
 	margin-top: 21px;
-	padding: 43px 52px;
+	padding: 43px 37px;
 	border-radius: 12px;
 	background: url(../img/logo_footer.png) 80% 100%/258px auto no-repeat #333333;
 	color: #fff;
-}
-.footer > *:not(.footer__social) {
-	margin-right: auto;
+	line-height: 1.5em;
 }
 
 .contacts .link[href*="mailto"],
@@ -675,33 +661,29 @@ header .link {
 .footer .link[href*="mailto"]:hover,
 .footer .link[href*="tel"]:hover,
 .footer__copyright a:hover {
-	color: #fff;
+	color: inherit;
 }
-
 .footer .link {
 	display: block;
 	color: #cc9933;
-	line-height: 24px;
 }
-
 .footer__copyright {
-	width: 300px;
+	padding-right: 5%;
 }
 
 .footer__copyright-p {
 	padding-bottom: 34px;
 }
 
-.footer__contacts {
-	line-height: 24px;
-}
-
 .footer__contacts-list {
 	padding-bottom: 34px;
 }
 
+.footer__social {
+	margin: 0 auto;
+}
 .footer__social-list {
-	margin: 6px 0 21px 128px;
+	margin: 6px 0 21px 60%;
 }
 
 .facebook,

@@ -40,42 +40,49 @@
 		</div>
 	</header>
 	<main class="container">
-		<section class="now">
-			<form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="now__bookinging">
-				<h2 class="booking__header heading">Быстрая бронь</h2>
-				<ul class="booking__list">
-					<li class="booking__list-item">
-						<label class="visually-hidden" for="city">Город</label>
-						<input class="input" id="city" type="text" name="City" placeholder="Город">
-					</li>
-					<li class="booking__list-item">
-						<label class="visually-hidden" for="room_category">Город</label>
-						<input class="input" id="room_category" type="text" name="room_category" placeholder="Категория номера">
-					</li>
-					<li class="booking__list-item">
-						<label class="visually-hidden" for="check_in_date">Дата заселения</label>
-						<input class="input" id="check_in_date" type="text" name="check_in_date" placeholder="Дата заселения">
-					</li>
-					<li class="booking__list-item">
-						<label class="visually-hidden" for="number_of_nights">Количество ночей</label>
-						<input class="input" id="number_of_nights" type="text" name="number_of_nights"
-							placeholder="Количество ночей">
-					</li>
-					<li class="booking__list-item">
-						<label class="visually-hidden" for="number_of_guests">Количество гостей</label>
-						<input class="input" id="number_of_guests" type="text" name="number_of_guests"
-							placeholder="Количество гостей">
-					</li>
-				</ul>
-				<div class="booking__search">
-					<button class="booking__search-btn btn">Найти номер</button>
-					<div class="booking__search-result">
+		<section class="now row">
+			<form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
+				class="now__bookinging col-lg-6">
+				<div class="row">
+					<div class="col-lg-11">
+						<h2 class="booking__header heading">Быстрая бронь</h2>
+						<ul class="booking__list">
+							<li class="booking__list-item">
+								<label class="visually-hidden" for="city">Город</label>
+								<input class="input" id="city" type="text" name="City" placeholder="Город">
+							</li>
+							<li class="booking__list-item">
+								<label class="visually-hidden" for="room_category">Город</label>
+								<input class="input" id="room_category" type="text" name="room_category" placeholder="Категория номера">
+							</li>
+							<li class="booking__list-item">
+								<label class="visually-hidden" for="check_in_date">Дата заселения</label>
+								<input class="input" id="check_in_date" type="text" name="check_in_date" placeholder="Дата заселения">
+							</li>
+							<li class="booking__list-item">
+								<label class="visually-hidden" for="number_of_nights">Количество ночей</label>
+								<input class="input" id="number_of_nights" type="text" name="number_of_nights"
+									placeholder="Количество ночей">
+							</li>
+							<li class="booking__list-item">
+								<label class="visually-hidden" for="number_of_guests">Количество гостей</label>
+								<input class="input" id="number_of_guests" type="text" name="number_of_guests"
+									placeholder="Количество гостей">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="booking__search row">
+					<div class="col-lg-5">
+						<button class="booking__search-btn btn">Найти номер</button>
+					</div>
+					<div class="booking__search-result col-lg-6 ">
 						<span>9 757</span>
 						Предложений доступно
 					</div>
 				</div>
 			</form>
-			<div class="now__offer">
+			<div class="now__offer col-lg-6">
 				<h2 class="offer__header heading">Спецпредложение</h2>
 				<img class="offer__img" src="./img/22_2228.jpg" alt="Номер горячего предложения">
 				<div class="offer__luxury">
@@ -124,8 +131,6 @@
 						</div>
 					</div>
 				</li>
-			</ul>
-			<ul class="row">
 				<li class="service col-lg-6">
 					<div class="card">
 						<img class="service__img" src="./img/12_2312.jpg" alt="Бассейн">
@@ -186,8 +191,6 @@
 						</p>
 					</div>
 				</li>
-			</ul>
-			<ul class="row">
 				<li class="col-lg-3">
 					<div class="privilege card">
 						<img src="./img/icons_parking.png" alt="Парковка">
@@ -270,8 +273,6 @@
 						</div>
 					</div>
 				</li>
-			</ul>
-			<ul class="hotels row">
 				<li class="col-lg-4">
 					<div class="hotel card">
 						<img class="hotel__img" src="./img/hotels_04.jpg" alt="Виды отеля Lagoona mentira piadosa">
@@ -317,8 +318,6 @@
 						</div>
 					</div>
 				</li>
-			</ul>
-			<ul class="hotels row">
 				<li class="col-lg-4">
 					<div class="hotel card">
 						<img class="hotel__img" src="./img/hotels_07.jpg" alt="Виды отеля Lagoona enfermo terminó">
@@ -358,91 +357,103 @@
 				</li>
 			</ul>
 		</section>
-		<section id="contacts" class="contacts">
-			<div>
-				<h2 class="heading"><a class="list" href="#top">Контакты</a></h2>
-				<ul class="contacts__list">
-					<li class="contacts__list-li">
-						<h3 class="contacts__list-header">Адрес</h3>
-						<address class="col-2">
-							11710, улица Юности, дом 5 строение 4, офис 2
-						</address>
-					</li>
-					<li class="contacts__list-li">
-						<h3 class="contacts__list-header">Телефоны</h3>
-						<div class="contacts__list-body phone">
-							<a class="link" href="tel:+74995356434">+7 (499) 535-64-34</a>
-							<a class="link" href="tel:+74950050544">+7 (495) 005-05-44</a>
-						</div>
-					</li>
-					<li class="contacts__list-li">
-						<h3 class="contacts__list-header">E-mail</h3>
-						<div class="contacts__list-body">
-							<span><a class="link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</span>
-							<span><a class="link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам
-								сотрудничества</span>
-						</div>
-					</li>
-					<li class="contacts__list-li">
-						<h3 class="contacts__list-header">График</h3>
-						<div class="contacts__list-body">
-							Понедельник - пятница с 10:00 до 19:00
-						</div>
-					</li>
-					<li>
-						<a href="#" class="contacts__btn btn__light">Построить маршрут</a>
-					</li>
-				</ul>
+		<section id="contacts" class="">
+			<div class="row">
+				<div class="col-lg-5">
+					<h2 class="heading"><a class="list" href="#top">Контакты</a></h2>
+					<ul class="contacts__list">
+						<li class="contacts__list-li">
+							<h3 class="contacts__list-header">Адрес</h3>
+							<address class="col-2">
+								11710, улица Юности, дом 5 строение 4, офис 2
+							</address>
+						</li>
+						<li class="contacts__list-li">
+							<h3 class="contacts__list-header">Телефоны</h3>
+							<div class="contacts__list-body phone">
+								<a class="link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+								<a class="link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+							</div>
+						</li>
+						<li class="contacts__list-li">
+							<h3 class="contacts__list-header">E-mail</h3>
+							<div class="contacts__list-body">
+								<span><a class="link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</span>
+								<span><a class="link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам
+									сотрудничества</span>
+							</div>
+						</li>
+						<li class="contacts__list-li">
+							<h3 class="contacts__list-header">График</h3>
+							<div class="contacts__list-body">
+								Понедельник - пятница с 10:00 до 19:00
+							</div>
+						</li>
+						<li>
+							<a href="#" class="contacts__btn btn__light">Построить маршрут</a>
+						</li>
+					</ul>
+				</div>
+				<form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
+					class="col-lg-5 col-lg-offset-1">
+					<div class="feedback row">
+						<h2 class="feedback__header heading"><a class="list" href="#top">Напишите нам</a></h2>
+						<ul class="feedback__list">
+							<li>
+								<label class="visually-hidden" for="name">Имя</label>
+								<input class="feedback__list-input" required id="name" type="text" name="name" placeholder="Имя">
+							</li>
+							<li class="feedback__list-item">
+								<label class="visually-hidden" for="tel">Телефон</label>
+								<input class="feedback__list-input" required id="tel" type="tel" name="phone" placeholder="+7">
+							</li>
+							<li class="feedback__list-item">
+								<textarea class="feedback__list-input" required rows="2" name="text"
+									placeholder="Сообщение..."></textarea>
+							</li>
+							<li class="feedback__search">
+								<button type="submit" class="feedback__btn btn">Отправить</button>
+							</li>
+						</ul>
+					</div>
+				</form>
 			</div>
-			<form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="feedback">
-				<h2 class="feedback__header heading"><a class="list" href="#top">Напишите нам</a></h2>
-				<ul class="feedback__list">
-					<li>
-						<label class="visually-hidden" for="name">Имя</label>
-						<input class="feedback__list-input" required id="name" type="text" name="name" placeholder="Имя">
-					</li>
-					<li class="feedback__list-item">
-						<label class="visually-hidden" for="tel">Телефон</label>
-						<input class="feedback__list-input" required id="tel" type="tel" name="phone" placeholder="+7">
-					</li>
-					<li class="feedback__list-item">
-						<textarea class="feedback__list-input" required rows="2" name="text" placeholder="Сообщение..."></textarea>
-					</li>
-					<li class="feedback__search">
-						<button type="submit" class="feedback__btn btn">Отправить</button>
-					</li>
-				</ul>
-			</form>
 		</section>
 	</main>
-	<footer class="footer container">
-		<div class="footer__copyright">
-			<p class="footer__copyright-p">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
-			<p class="footer__copyright-p">Представленная на сайте информация носит справочный характер и не является
-				публичной офертой</p>
-			<a class="link" href="#">Политика конфиденциальности</a>
+	<footer class="container">
+		<div class="footer">
+			<div class="row">
+				<div class="footer__copyright col-lg-5">
+					<p class="footer__copyright-p">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</p>
+					<p class="footer__copyright-p">Представленная на сайте информация носит справочный характер и не является
+						публичной офертой</p>
+					<a class="link" href="#">Политика конфиденциальности</a>
+				</div>
+				<ul class="footer__contacts col-lg-6">
+					<li class="footer__contacts-list address">
+						<address> 11710, улица Юности, дом 5 строение 4, офис 2</address>
+					</li>
+					<li class="footer__contacts-list phone">
+						<a class="link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+						<a class="link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+					</li>
+					<li class="footer__contacts-list email">
+						<a class="link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+						<a class="link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+					</li>
+				</ul>
+				<ul class="footer__social col-lg-1">
+					<li class="footer__social-list"><a class="tripadvisor" href="https://www.tripadvisor.ru/" target="_blank"></a>
+					</li>
+					<li class="footer__social-list"><a class="twitter" href="https://twitter.com/explore" target="_blank"></a>
+					</li>
+					<li class="footer__social-list"><a class="facebook" href="https://ru-ru.facebook.com/" target="_blank"></a>
+					</li>
+					<li class="footer__social-list"><a class="vk" href="https://vk.com/feed" target="_blank"></a></li>
+					<li class="footer__social-list"><a class="google_plus" href="#"></a></li>
+				</ul>
+			</div>
 		</div>
-		<ul class="footer__contacts">
-			<li class="footer__contacts-list address">
-				<address> 11710, улица Юности, дом 5 строение 4, офис 2</address>
-			</li>
-			<li class="footer__contacts-list phone">
-				<a class="link" href="tel:+74995356434">+7 (499) 535-64-34</a>
-				<a class="link" href="tel:+74950050544">+7 (495) 005-05-44</a>
-			</li>
-			<li class="footer__contacts-list email">
-				<a class="link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-				<a class="link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-			</li>
-		</ul>
-		<ul class="footer__social">
-			<li class="footer__social-list"><a class="tripadvisor" href="https://www.tripadvisor.ru/" target="_blank"></a>
-			</li>
-			<li class="footer__social-list"><a class="twitter" href="https://twitter.com/explore" target="_blank"></a></li>
-			<li class="footer__social-list"><a class="facebook" href="https://ru-ru.facebook.com/" target="_blank"></a></li>
-			<li class="footer__social-list"><a class="vk" href="https://vk.com/feed" target="_blank"></a></li>
-			<li class="footer__social-list"><a class="google_plus" href="#"></a></li>
-		</ul>
 	</footer>
 </body>
 
