@@ -13,10 +13,10 @@
 
 <body>
 	<header id="top" class="container">
-		<div class="row clearfix">
-			<div class="header__up">
+		<div class="row">
+			<div class="header__up clearfix">
 				<div class="header__logo col-lg-3">
-					<a href="#"><img src="./img/logo_header.png" alt="Логотип компании"></a>
+					<a href="#"><img class="header__logo-img" src="./img/logo_header.png" alt="Логотип компании"></a>
 				</div>
 				<div class="header__tel col-lg-3">
 					<a class="link" href="tel:+74953225448">+7 495 322 54 48</a>
@@ -26,20 +26,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__down row">
-			<nav class="header__menu">
-				<ul class="menu">
-					<li class="menu__item"><a class="link" href="#about_us">О нас</a></li>
-					<li class="menu__item"><a class="link" href="#services">Услуги</a></li>
-					<li class="menu__item"><a class="link" href="#privileges">Преймущества</a></li>
-					<li class="menu__item"><a class="link" href="#hotels">Размещения</a></li>
-					<li class="menu__item"><a class="link" href="#">Блог</a></li>
-					<li class="menu__item"><a class="link" href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="header__search">
-				<input class="search__input" name="search_in" value="Поиск">
-				<button class="search__btn">Поиск</button>
+		<div class="header__down">
+			<div class="row clearfix">
+				<nav class="header__menu col-lg-7">
+					<ul class="menu">
+						<li class="menu__item"><a class="link" href="#about_us">О нас</a></li>
+						<li class="menu__item"><a class="link" href="#services">Услуги</a></li>
+						<li class="menu__item"><a class="link" href="#privileges">Преймущества</a></li>
+						<li class="menu__item"><a class="link" href="#hotels">Размещения</a></li>
+						<li class="menu__item"><a class="link" href="#">Блог</a></li>
+						<li class="menu__item"><a class="link" href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__search col-lg-4 col-lg-offset-1">
+					<input class="search__input" name="search_in" value="Поиск">
+					<button class="search__btn">Поиск</button>
+				</div>
 			</div>
 		</div>
 	</header>
